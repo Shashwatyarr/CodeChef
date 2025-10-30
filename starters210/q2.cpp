@@ -39,6 +39,20 @@ void fastio()
 int main()
 {
     fastio();
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n, x;
+        cin >> n >> x;
+        if (n > x)
+        {
+            int a = n - x;
+            cout << a * (a + 1) / 2 << endl;
+        }
+        else
+            cout << 0 << endl;
+    }
 
     return 0;
 }
